@@ -9,4 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://GreyAdept.github.io/Portfolio_AatuL',
+  base: '/greyadept.github.io/Portfolio_AatuL'
 });
