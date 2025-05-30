@@ -8,6 +8,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://GreyAdept.github.io/Portfolio_AatuL',
-  base: '/greyadept.github.io/Portfolio_AatuL'
+  site: 'https://GreyAdept.github.io/Portfolio_AatuL'
 });
