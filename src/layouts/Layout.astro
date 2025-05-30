@@ -1,0 +1,52 @@
+---
+import "../styles/global.css";
+import "@fontsource/tomorrow"
+const { title } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>{title}</h1>
+    
+    <article>
+      <slot /> <!-- your content is injected here -->
+    </article>
+   
+  </body>
+  <style is:global>
+
+    body {
+        margin: auto;
+        width: 60%;
+        background-image: linear-gradient(to right, #1e1e2e , #313244);
+        overflow: visible;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-family: "tomorrow";
+      color: white;
+    }
+
+    article {
+        color: white;
+    }
+    a {
+        color: white;
+        font-family: "tomorrow";
+    }
+
+    .active{
+      color: #f2cdcd;
+    }
+
+    
+  </style>
+</html>
+
+<script>
+	
+</script>
